@@ -3,7 +3,7 @@ import Card from './Card'
 const Main = () => {
 
     return(
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center mt-32">
             <Card />
             <Card />
             <Card />
