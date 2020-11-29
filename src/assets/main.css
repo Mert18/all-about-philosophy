@@ -171876,9 +171876,4 @@ video {
   .\32xl\:animate-bounce {
     animation: bounce 1s infinite;
   }
-  .pagination a {
-    padding:12px 12px;
-    color:rgb(153, 59, 75);
-  }
 }
-

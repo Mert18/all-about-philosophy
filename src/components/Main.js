@@ -4,9 +4,9 @@ const Main = () => {
 
     return(
         <div className="flex flex-wrap justify-center mt-32">
-            <Card />
-            <Card />
-            <Card />
+            <Card main="56%" exp="Cupidatat ipsum duis magna ea anim culpa deserunt aliquip veniam non voluptate sit elit consectetur."/>
+            <Card main="512 Weeks" exp="Duis magna ea anim culpa." />
+            <Card main="10000 Hours" exp="Deserunt aliquip veniam non voluptate sit elit consectetur." />
         </div>
     )
 }
