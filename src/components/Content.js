@@ -4,6 +4,7 @@ import Pagination from './Pagination.js'
 import { ReactComponent as Bird } from '../assets/birdsvg-01.svg';
 import { ReactComponent as Sun } from '../assets/sunsvg-01.svg';
 
+
 const Content = (props) => {
 
     return(
@@ -18,7 +19,7 @@ const Content = (props) => {
             </div>
 
             <div className="mb-10">
-                <Pagination />
+                        <Pagination />
             </div>
         </div>
     )
