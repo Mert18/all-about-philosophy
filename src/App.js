@@ -18,7 +18,7 @@ const App = () => {
         <div className="relative">
           <Bg />
         </div>
-        <div className="text-center absolute top-20 overflow-hidden">
+        <div className="text-center absolute top-0 overflow-hidden">
             <Quote quotes={quotes} />
             <DateInput />
             <Main />
