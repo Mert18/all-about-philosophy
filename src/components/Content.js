@@ -15,7 +15,7 @@ const Content = (props) => {
                     <Article image={<Sun className="w-min" />} title="Gonna find it now" />
                     <Article image={<Bird className="w-min" />} title="I gonna be a man" />
                     <Article image={<Sun className="w-min" />} title="Gonna find him now" />
-                    <Article image={<Bird className="w-max" />} title="I gotta be a man" />
+                    <Article image={<Bird className="w-min" />} title="I gotta be a man" />
             </div>
 
             <div className="mb-10">
