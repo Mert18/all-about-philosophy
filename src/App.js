@@ -13,12 +13,12 @@ const quotes= [
 
 const App = () => {
   return (
-    <div>
+    <div className="">
 
-        <div className="relative bg-repeat top-96">
+        <div className="relative">
           <Bg />
         </div>
-        <div className="text-center absolute top-20">
+        <div className="text-center absolute top-20 overflow-hidden">
             <Quote quotes={quotes} />
             <DateInput />
             <Main />
