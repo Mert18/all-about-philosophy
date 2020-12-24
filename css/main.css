@@ -29,6 +29,7 @@ body{
     margin-top: 2rem;
     background-color: white;
     border-radius: 2rem;
+    margin-bottom: 4rem;
 }
 .header .quote p {
     font-size: 1.3rem;
@@ -45,6 +46,9 @@ body{
     text-align: center;
     margin-bottom: 2rem;
 }
+.header #datebtn {
+    width: 5%;
+}
 .header__content {
     width:98%;
     height: 50vh;
@@ -56,6 +60,14 @@ body{
     width: 30%;
     height:100%;
     margin-right: 2%;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: none;
+    transition: all .5s;
+}
+.header__content .card h1 {
+    margin-bottom: 2rem;
 }
 .header__content .card:first-child {
     margin-left: 2%;
@@ -69,14 +81,52 @@ body{
 /* Main */
 
 .main {
-    margin-top: 4rem;
     width: 90%;
     height: 90vh;
     background-color: white;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.article {
+    width: 45rem;
+    text-align: center;
+    margin-top: 3rem;
+    transition: all .2s;
+    display: inline-block;
+}
+.article:hover {
+    display: inline-block;
+    background-image: linear-gradient(to right,#FFDDF6,#E10273);
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+.pagination a:hover {
+    cursor: pointer;
+}
 
+.pagination a.active {
+  background-color: #E10273;
+  color: white;
+  border: 1px solid #FFDDF6;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 /* Footer */
 
@@ -88,3 +138,23 @@ body{
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #eebee1;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
