@@ -8,10 +8,7 @@
 body{
     font-family: 'Antic', sans-serif;
     position: relative;
-    background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: url(../bg_red.svg);
 
 }
 .container {
@@ -47,7 +44,17 @@ body{
     margin-bottom: 2rem;
 }
 .header #datebtn {
-    width: 5%;
+    width: 120px;
+    height: 60px;
+    background:url(../bg_redbtn.svg);
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.header #datebtn:hover {
+    cursor: pointer;
 }
 .header__content {
     width:98%;
@@ -60,9 +67,7 @@ body{
     width: 30%;
     height:100%;
     margin-right: 2%;
-    border: 2px solid black;
     padding: 2rem;
-    border-radius: 2rem;
     display: none;
     transition: all .5s;
 }
@@ -78,11 +83,11 @@ body{
 }
 
 
+
 /* Main */
 
 .main {
     width: 90%;
-    height: 90vh;
     background-color: white;
     border-radius: 2rem;
     display: flex;
@@ -94,6 +99,7 @@ body{
     margin-top: 3rem;
     transition: all .2s;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 .article:hover {
     display: inline-block;
@@ -137,6 +143,15 @@ body{
     background-color: white;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer * {
+    margin-right: 1rem;
+}
+.footer a {
+    text-decoration: none;
 }
 
 @-webkit-keyframes spin {

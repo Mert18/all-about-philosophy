@@ -23,6 +23,3 @@ function myFunction() {
 
     }
 }
-
-//Pagination
-
