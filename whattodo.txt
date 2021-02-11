@@ -1,1 +1,0 @@
-card background can have a dinamic background.

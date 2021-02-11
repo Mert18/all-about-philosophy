@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    letter-spacing: 3px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5em;
+    color: black;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.firstSteps{
+    
+    font-size: 1.2rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 2rem;
+    }
+    a:hover {
+        border: 2px solid black;
+    }
+}
