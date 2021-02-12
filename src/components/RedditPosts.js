@@ -16,9 +16,12 @@ const RedditPosts = () => {
     }
     return (
         <div className="post">
-            <h2>Recent Reddit Posts</h2>
             {posts.map((post) => (
-                <a href={post.data.url} target="_blank" rel="noreferrer"><h3>{post.data.title}</h3></a>
+                <a href={post.data.url} target="_blank" rel="noreferrer">
+
+                    <div className="box"></div>
+
+                </a>
             ))}
         </div>
     )

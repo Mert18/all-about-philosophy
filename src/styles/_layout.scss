@@ -25,16 +25,31 @@
 
 .post {
     margin-top: 2rem;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
     a {
         color: steelblue;
     }
     h2 {
         color: red;
         margin: .3rem;
+        padding: 1rem;
         font-size: 1.3rem;
     }
     h3 {
         margin: 3rem;
+    }
+
+    .box {
+        width: 6em;
+        height: 6em;
+        background-color: red;
+        margin: .3em;
+        transition: transform .7s;
+    }
+    .box:hover {
+        transform: rotateY(180deg);
     }
 }
 
