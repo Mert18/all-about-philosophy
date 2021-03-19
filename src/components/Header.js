@@ -1,10 +1,12 @@
 import React from 'react';
 import '../styles/main.scss'
+import { NavLink } from "react-router-dom";
+
 
 const Header = () => {
     return (
         <div className="header">
-            <h1>Stoicism</h1>
+            <NavLink exact to="/"><h1>Philosophy</h1></NavLink>
         </div>
     )
 }

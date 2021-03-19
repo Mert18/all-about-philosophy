@@ -10,27 +10,9 @@
     box-sizing: border-box;
 }
 
-.header h1 {
-    letter-spacing: 3px;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 5em;
-    color: black;
-}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-.firstSteps{
-    
-    font-size: 1.2rem;
-
-    a {
-        text-decoration: none;
-        color: black;
-        padding: 2rem;
-    }
-    a:hover {
-        border: 2px solid black;
-    }
+    font-size: 62.5%;
+    background-color: #e5e5f0;
 }
